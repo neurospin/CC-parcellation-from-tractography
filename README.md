@@ -31,7 +31,13 @@ cp SegmentationOfCorpusCallosum.py ~/.brainvisa/processes/SegmentationOfCorpusCa
 
 ### Generating the mid-sagittal section of corpus callosum
 
-TODO
+Once the process is installed, you can launch the `brainvisa` command and find the process in the graphical user interface, under “My processes”.
+
+Before using this process, make sure that you have imported your data in a BrainVISA database, and run the Morphologist pipeline (see the documentation on [brainvisa.info](https://brainvisa.info/)).
+
+After Morphologist is complete, open “Segmentation of Corpus Callosum” (found under “My processes”). Fill in the first parameter (_t1mri\_nobias_) and all remaining values should be automatically deduced. Hit _Run_, the process will run for a couple of minutes.
+
+You should always check quality the output (_corpus\_callosum\_mask\_26c). In many cases you will need to retoch the result manually, usually to remove the fornix. For that, you can use the pencil icon next to the resulting file, and edit the region of interest in Anatomist. Close the window when you are done editing, you will then be prompted to save the edited ROI.
 
 
 ### Performing connectivity-based parcellation of corpus callosum
