@@ -1,6 +1,7 @@
 # CC-parcellation-from-tractography
 Parcellation of the mid-sagittal section of the **corpus callosum** (CC) based on bilateral homotopic connectivity
-
+This compendium of code accompanies the following publication:
+Fraize, J., Convert, G., Leprince, Y., Sylvestre-Marconville, F., Kerdreux, E., Auzias, G., Lefèvre, J., Delorme, R., Elmaleh-Bergès, M., Hertz-Pannier, L., & Germanaud, D. (2023). Mapping corpus callosum surface reduction in fetal alcohol spectrum disorders with sulci and connectivity-based parcellation. *Frontiers in Neuroscience - Neurodevelopment*. DOI: [10.3389/fnins.2023.1188367](https://doi.org/10.3389/fnins.2023.1188367).
 
 ## Introduction
 
@@ -37,7 +38,7 @@ Before using this process, make sure that you have imported your data in a Brain
 
 After Morphologist is complete, open “Segmentation of Corpus Callosum” (found under “My processes”). Fill in the first parameter (_t1mri\_nobias_) and all remaining values should be automatically deduced. Hit _Run_, the process will run for a couple of minutes.
 
-You should always check quality the output (_corpus\_callosum\_mask\_26c). In many cases you will need to retoch the result manually, usually to remove the fornix. For that, you can use the pencil icon next to the resulting file, and edit the region of interest in Anatomist. Close the window when you are done editing, you will then be prompted to save the edited ROI.
+You should always check quality the output (_corpus\_callosum\_mask\_26c). In many cases you will need to retouch the result manually, usually to remove the fornix. For that, you can use the pencil icon next to the resulting file, and edit the region of interest in Anatomist. Close the window when you are done editing, you will then be prompted to save the edited ROI.
 
 
 ### Performing connectivity-based parcellation of corpus callosum
@@ -70,7 +71,7 @@ Based on this input data, it will perform these processing steps:
 5. Average left and right track density maps
 6. Vote
 
-Final outputs of this scripts are:
+Final outputs of this script are:
 
 - Result of the vote on the midsagittal section of CC, in anatomical (T1) space:
   `${subjectName}_segmented_cc_2T1_mean.nii.gz`
