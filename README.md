@@ -1,5 +1,6 @@
 # CC-parcellation-from-tractography
 Parcellation of the mid-sagittal section of the **corpus callosum** (CC) based on bilateral homotopic connectivity
+
 This compendium of code accompanies the following publication:
 Fraize, J., Convert, G., Leprince, Y., Sylvestre-Marconville, F., Kerdreux, E., Auzias, G., Lefèvre, J., Delorme, R., Elmaleh-Bergès, M., Hertz-Pannier, L., & Germanaud, D. (2023). Mapping corpus callosum surface reduction in fetal alcohol spectrum disorders with sulci and connectivity-based parcellation. *Frontiers in Neuroscience - Neurodevelopment*. DOI: [10.3389/fnins.2023.1188367](https://doi.org/10.3389/fnins.2023.1188367).
 
